@@ -13,7 +13,7 @@ An analytics dashboard for a Brazilian e-commerce store, built on top of a **MyS
 5. [Dashboard Panels](#-dashboard-panels)
 6. [Key Insights](#-key-insights)
 7. [Data Notes](#-data-notes)
-8. [Roadmap](#-roadmap)
+
 
 ---
 
