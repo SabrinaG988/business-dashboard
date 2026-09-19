@@ -12,7 +12,7 @@ An analytics dashboard for a Brazilian e-commerce store, built on top of a **MyS
 4. [Getting Started](#-getting-started)
 5. [Dashboard Panels](#-dashboard-panels)
 6. [Key Insights](#-key-insights)
-7. [Data Notes](#-data-notes)
+
 
 
 ---
@@ -130,7 +130,7 @@ Area chart showing revenue at weekly data points from **August 3 to September 14
 - Reaches a first peak of roughly **1,830** around **August 17**.
 - Dips to about **1,350**, then recovers to about **1,550**.
 - Hits the **highest point (~2,000)** in early September.
-- The final point (September 14) drops to about **710**, which may reflect an incomplete period.
+- The final point (September 14) drops to about **710**.
 
 ---
 
@@ -172,7 +172,6 @@ Bar chart with revenue per Brazilian state (13 states).
 | **RJ** | ~1,050 | PR | ~250 |
 | | | DF | ~220 |
 
-*Values are estimated from the chart and add up to roughly the total revenue.*
 
 ---
 
@@ -190,7 +189,7 @@ Bar chart with revenue per Brazilian state (13 states).
 | Facebook | ~1,170 | 10% |
 | Email | ~750 | 7% |
 
-*Values are estimated from the chart and add up to roughly the total revenue.*
+
 
 **Top Products by Revenue** (10 rows, scrollable)
 
@@ -215,17 +214,7 @@ Bar chart with revenue per Brazilian state (13 states).
 - **Google is the strongest channel (~44% of revenue)**, followed by Instagram (~27%). Together, Facebook and Instagram bring in about 38% of revenue, roughly double what Direct and Email deliver combined (~18%).
 - **São Paulo** leads in revenue (~17.7% of the total). Northeastern states (RN, CE, PE, BA, PI) together contribute about 39%, and the Southeast (SP, MG, RJ) about 37%.
 - **Pix and Credit Card** are used almost equally.
-- Revenue trends **upward until early September**, then falls in the last (likely partial) period.
-
----
-
-## 📝 Data Notes
-
-- The **Avg order** KPI is calculated as total revenue divided by **distinct orders** (≈ 453.83), not by order-item rows.
-- The **Revenue by Traffic Source** chart sums revenue per channel, and its values add up to roughly the total revenue of 11,345.8.
-- Currency formatting is not fully uniform across panels (`$` on Total Revenue, no symbol on Avg order and chart labels). Consider standardizing to **R$**.
-
----
+- Revenue trends **upward until early September**, then falls in the last per
 
 
 
