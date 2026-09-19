@@ -1,0 +1,28 @@
+services:
+
+  mysql:
+    image: mysql:8.0
+    container_name: ecommerce_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ecommerce
+      MYSQL_USER: metabase
+      MYSQL_PASSWORD: metabase
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  metabase:
+    image: metabase/metabase:latest
+    container_name: ecommerce_metabase
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    ports:
+      - "3000:3000"
+
+volumes:
+  mysql_data:
